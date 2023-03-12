@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SecurityApp</string>
+    <string name="your_perfect_online_escort">Your Perfect \nOnline Escort</string>
+    <string name="escorting_you_to_start_hub_so_you_don_t_lost">Escorting you to start \nhub so you don\'t lost</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="confirm_password_main">Confirm Password</string>
+    <string name="please_enter_the_email_address_your_information_was_linked_to">Please enter the email address your information \nwas linked to</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up_new_entry">Sign in</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sihw">SIHW</string>
+    <string name="animinate_the_screen">Animinate the screen</string>
+    <string name="link_your_emergency_contacts_easily">Link your emergency contacts easily</string>
+    <string name="your_favourite_people_can_be_updated_of_your_whereabout_in_one_click">Your favourite people can be updated of your whereabout in one click</string>
+    <string name="get_started">Get started</string>
+    <string name="never_feel_lonely_anymore_or_walk_alone_as_we_ensure_you_feel_safe">Never Feel Lonely Anymore Or Walk Alone As We Ensure You Feel Safe</string>
+    <string name="you_get_real_time_location_with_trusted_contact_in_case_of_a_panic_situation">You get real time location with trusted contact in case of a panic situation</string>
+    <string name="prepare_and_prevent_instead_of_repair_and_regret_put_safety_in_every_slide">Prepare and prevent instead of repair and regret,Put safety in every slide</string>
+</resources>

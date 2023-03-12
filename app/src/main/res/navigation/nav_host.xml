@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/getStarted">
+
+    <fragment
+        android:id="@+id/getStarted"
+        android:name="com.starthub.securityApp.GetStarted"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStarted_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.starthub.securityApp.Emergency"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_emergency" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.starthub.securityApp.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.starthub.securityApp.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword2"
+        android:name="com.starthub.securityApp.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/splash_screenFragment"
+        android:name="com.starthub.securityApp.Splash_screenFragment"
+        android:label="Splash_screenFragment" >
+        <action
+            android:id="@+id/action_splash_screenFragment_to_getStarted"
+            app:destination="@id/getStarted" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.starthub.securityApp.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/SOSalertFragment"
+        android:name="com.starthub.securityApp.SOSalertFragment"
+        android:label="fragment_s_o_s"
+        tools:layout="@layout/fragment_s_o_s" />
+</navigation>
