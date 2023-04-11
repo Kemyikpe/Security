@@ -9,7 +9,11 @@
         android:id="@+id/splashscreenFragment"
         android:name="com.starthub.securityApp.GetStarted"
         android:label="fragment_get_started"
-        tools:layout="@layout/fragment_splash_screen" />
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashscreenFragment_to_welcomeFragment"
+            app:destination="@id/getStarted" />
+    </fragment>
     <action
         android:id="@+id/action_getStarted_to_welcomeFragment"
         app:destination="@id/onBoardingFragment" />
@@ -20,8 +24,8 @@
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_get_started" >
         <action
-            android:id="@+id/action_getStarted_to_dialogFragment"
-            app:destination="@id/dialogFragment" />
+            android:id="@+id/action_getStarted_to_welcomeFragment"
+            app:destination="@id/onBoardingFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -58,9 +62,9 @@
     </fragment>
     <fragment
         android:id="@+id/dialogFragment"
-        android:name="com.starthub.securityApp.DialogFragment"
+        android:name="com.starthub.securityApp.GuardSessionFragment"
         android:label="fragment_dialog"
-        tools:layout="@layout/fragment_dialog" />
+        tools:layout="@layout/fragment_guard_seesion" />
     <!--    <fragment-->
 <!--        android:id="@+id/splash_screenFragment"-->
 <!--        android:name="com.starthub.securityApp.Splash_screenFragment"-->

@@ -35,6 +35,7 @@
     <string name="confirm_end_of_session">Confirm end of session</string>
     <string name="code">Please enter the 4 digit code sent to your mail</string>
     <string name="extend_time_of_guard_session">Extend time of guard session</string>
-    <string name="session">The time duration you set for your session has elasped. Will you likean extension of your guard session?</string>
+    <string name="session">The time duration you set for your session has elapsed. Will you like an extension of your guard session?</string>
     <string name="your_guard_session_has_come_to_an_end">Your guard session has come to an end</string>
+    <string name="extension">Are you done with the session? Click YES and NO if you would want an extension</string>
 </resources>
