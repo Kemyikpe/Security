@@ -13,14 +13,14 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="sihw">SIHW</string>
     <string name="animinate_the_screen">Animinate the screen</string>
-    <string name="onboarding_title1">Link your emergency contacts easily</string>
+    <string name="onboarding_title1">Link your emergency \ncontacts easily</string>
     <string name="onboarding_description1">Your favourite people can be updated of your whereabout in one click</string>
     <string name="get_started">Get started</string>
     <string name="never_feel_lonely_anymore_or_walk_alone_as_we_ensure_you_feel_safe">Never Feel Lonely Anymore Or Walk Alone As We Ensure You Feel Safe</string>
     <string name="onboarding_description2">You get real time location with trusted contact in case of a panic situation</string>
     <string name="onboarding_description3">Prepare and prevent instead of repair and regret,Put safety in every slide</string>
-    <string name="onboarding_title2">Share your live location at a go</string>
-    <string name="onboarding_title3">Activate an SOS alert in one click</string>
+    <string name="onboarding_title2">Share your live location \nat a go</string>
+    <string name="onboarding_title3">Activate an SOS alert \nin one click</string>
     <string name="full_name">full name</string>
     <string name="state_of_origin">State of origin</string>
     <string name="Date">Date of birth</string>
@@ -37,4 +37,8 @@
     <string name="extend_time_of_guard_session">Extend time of guard session</string>
     <string name="session">The time duration you set for your session has elasped. Will you likean extension of your guard session?</string>
     <string name="your_guard_session_has_come_to_an_end">Your guard session has come to an end</string>
+    <string name="pager_view">pager view</string>
+    <string name="tab_layout">tab layout</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
 </resources>
