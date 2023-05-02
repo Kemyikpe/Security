@@ -3,21 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_host"
-    app:startDestination="@id/getStarted">
+    app:startDestination="@id/splashscreenFragment">
 
     <fragment
         android:id="@+id/splashscreenFragment"
-        android:name="com.starthub.securityApp.GetStarted"
-        android:label="fragment_get_started"
+        android:name="com.starthub.securityApp.SplashScreenFragment"
+        android:label="SplashScreenFragment"
         tools:layout="@layout/fragment_splash_screen" >
         <action
-            android:id="@+id/action_splashscreenFragment_to_welcomeFragment"
+            android:id="@+id/splashscreen_to_welcomeFragment"
             app:destination="@id/getStarted" />
     </fragment>
-    <action
-        android:id="@+id/action_getStarted_to_welcomeFragment"
-        app:destination="@id/onBoardingFragment" />
-
     <fragment
         android:id="@+id/getStarted"
         android:name="com.starthub.securityApp.GetStarted"
@@ -29,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.starthub.securityApp.SignUp"
+        android:name="com.starthub.securityApp.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -38,15 +34,15 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.starthub.securityApp.Login"
+        android:name="com.starthub.securityApp.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
+            android:id="@+id/action_loginFragment_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
     </fragment>
     <fragment
-        android:id="@+id/forgotPassword2"
+        android:id="@+id/forgotPassword"
         android:name="com.starthub.securityApp.ForgotPassword"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" />
@@ -54,8 +50,7 @@
         android:id="@+id/onBoardingFragment"
         android:name="com.starthub.securityApp.OnBoardingFragment"
         android:label="OnBoardingFragment"
-        tools:layout="@layout/fragment_onboarding"
-        >
+        tools:layout="@layout/fragment_onboarding">
         <action
             android:id="@+id/onboarding_to_signUp_graph"
             app:destination="@id/signUpFragment" />
@@ -65,13 +60,5 @@
         android:name="com.starthub.securityApp.GuardSessionFragment"
         android:label="fragment_dialog"
         tools:layout="@layout/fragment_guard_seesion" />
-    <!--    <fragment-->
-<!--        android:id="@+id/splash_screenFragment"-->
-<!--        android:name="com.starthub.securityApp.Splash_screenFragment"-->
-<!--        android:label="Splash_screenFragment" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_splash_screenFragment_to_getStarted"-->
-<!--            app:destination="@id/getStarted" />-->
-<!--    </fragment>-->
 
 </navigation>

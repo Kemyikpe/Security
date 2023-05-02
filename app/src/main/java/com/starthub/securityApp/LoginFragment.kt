@@ -9,12 +9,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.starthub.securityApp.databinding.FragmentGetStartedBinding
-import com.starthub.securityApp.databinding.FragmentLoginBinding
+import androidx.navigation.fragment.findNavController
 import java.util.regex.Pattern
 
 
-class Login : Fragment() {
+class LoginFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -33,23 +32,24 @@ class Login : Fragment() {
         val submit = view.findViewById<Button>(R.id.button2)
 
         submit.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_forgotPassword)
 
-            val email = email.text.toString().trim()
-            val password = password.text.toString().trim()
-
-            if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                Toast.makeText(requireContext(), "Email Verified !", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(requireContext(), "Enter valid Email address !", Toast.LENGTH_SHORT)
-                    .show()
-            }
-
-            if (password.isNotEmpty() && isValidPassword(password)) {
-                Toast.makeText(requireContext(), "Correct Password format !", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(requireContext(), "Enter correct password format !", Toast.LENGTH_SHORT)
-                    .show()
-            }
+//            val email = email.text.toString().trim()
+//            val password = password.text.toString().trim()
+//
+//            if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+//                Toast.makeText(requireContext(), "Email Verified !", Toast.LENGTH_SHORT).show()
+//            } else {
+//                Toast.makeText(requireContext(), "Enter valid Email address !", Toast.LENGTH_SHORT)
+//                    .show()
+//            }
+//
+//            if (password.isNotEmpty() && isValidPassword(password)) {
+//                Toast.makeText(requireContext(), "Correct Password format !", Toast.LENGTH_SHORT).show()
+//            } else {
+//                Toast.makeText(requireContext(), "Enter correct password format !", Toast.LENGTH_SHORT)
+//                    .show()
+//            }
         }
     }
 
