@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    app:layoutDescription="@xml/fragment_splash_screen_scene">
+    tools:context=".mainActivity.SplashScreenFragment">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -25,12 +25,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="15dp"
         android:text="@string/sihw"
         android:textColor="#772186"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="348dp" />
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

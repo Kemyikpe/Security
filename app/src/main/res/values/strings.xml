@@ -5,7 +5,7 @@
     <string name="sign_up">Sign up</string>
     <string name="sign_in">Sign in</string>
     <string name="confirm_password_main">Confirm Password</string>
-    <string name="please_enter_the_email_address_your_information_was_linked_to">Please enter the email address your information \nwas linked to</string>
+    <string name="linked_email">Please enter the email address your \ninformation was linked to</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sign_up_new_entry">Sign in</string>
@@ -41,4 +41,27 @@
     <string name="tab_layout">tab layout</string>
     <string name="skip">Skip</string>
     <string name="next">Next</string>
+    <string name="extension">The time duration for your session has elapsed. Will you like an extension of your guard?</string>
+    <string name="search">Search Previous guard</string>
+    <string name="Safety">Safety first is safety always</string>
+    <string name="discard">Do you wish to keep the information of the guard session or you would rather discard it</string>
+    <string name="deleted">This guard session has been deleted successfully</string>
+    <string name="saved">You can always find the guard information in your recent/previous guard session</string>
+    <string name="confirm">Your guard information has been saved</string>
+    <string name="done">Done</string>
+    <string name="item_label">E.g Event</string>
+    <string name="book_now">Book now</string>
+    <string name="safety">Safety first is \nsafety always</string>
+    <string name="recent">Recent Guard</string>
+    <string name="peace_james">Peace James</string>
+    <string name="destination">Destination</string>
+    <string name="select_date">Select Date</string>
+    <string name="add_emergency_contact">Add emergency contact</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="login">Login</string>
+    <string name="duration">06,Apr,08:32 AM</string>
 </resources>

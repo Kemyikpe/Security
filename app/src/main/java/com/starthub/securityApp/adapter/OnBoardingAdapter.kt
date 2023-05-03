@@ -3,7 +3,7 @@ package com.starthub.securityApp.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.starthub.securityApp.OnBoardingFragment.Companion.MAX_STEP
+import com.starthub.securityApp.mainActivity.OnBoardingFragment.Companion.MAX_STEP
 import com.starthub.securityApp.R
 import com.starthub.securityApp.databinding.OnboardingItemBinding
 

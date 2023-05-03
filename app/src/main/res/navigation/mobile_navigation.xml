@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/dashboardFragment">
+
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.starthub.securityApp.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/guardFragment2"
+        android:name="com.starthub.securityApp.guard.GuardFragment"
+        android:label="GuardFragment"
+        tools:layout="@layout/fragment_guard"/>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.starthub.securityApp.ui.notifications.NotificationsFragment"
+        android:label="NotificationsFragment"
+        tools:layout="@layout/fragment_notification"/>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+
+
+</navigation>

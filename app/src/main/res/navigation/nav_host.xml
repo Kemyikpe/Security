@@ -3,75 +3,146 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_host"
-    app:startDestination="@id/getStarted">
+    app:startDestination="@id/splashscreenFragment">
 
     <fragment
         android:id="@+id/splashscreenFragment"
-        android:name="com.starthub.securityApp.GetStarted"
-        android:label="fragment_get_started"
+        android:name="com.starthub.securityApp.mainActivity.SplashScreenFragment"
+        android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
-            android:id="@+id/action_splashscreenFragment_to_welcomeFragment"
+            android:id="@+id/action_SplashScreenFragment_to_getStarted"
             app:destination="@id/getStarted" />
     </fragment>
-    <action
-        android:id="@+id/action_getStarted_to_welcomeFragment"
-        app:destination="@id/onBoardingFragment" />
 
     <fragment
         android:id="@+id/getStarted"
-        android:name="com.starthub.securityApp.GetStarted"
+        android:name="com.starthub.securityApp.mainActivity.GetStarted"
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_get_started" >
         <action
-            android:id="@+id/action_getStarted_to_welcomeFragment"
+            android:id="@+id/action_getStarted_to_onBoardingFragment"
             app:destination="@id/onBoardingFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.starthub.securityApp.SignUp"
+        android:name="com.starthub.securityApp.mainActivity.SignUp"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
-            android:id="@+id/action_signUpFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_signUpFragment_to_emailVerificationFragment"
+            app:destination="@id/emailVerificationFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.starthub.securityApp.Login"
+        android:name="com.starthub.securityApp.mainActivity.Login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPassword2"
+            app:destination="@id/forgotPassword2" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/forgotPassword2"
-        android:name="com.starthub.securityApp.ForgotPassword"
+        android:name="com.starthub.securityApp.mainActivity.ForgotPassword"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" />
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="com.starthub.securityApp.OnBoardingFragment"
+        android:name="com.starthub.securityApp.mainActivity.OnBoardingFragment"
         android:label="OnBoardingFragment"
         tools:layout="@layout/fragment_onboarding"
         >
         <action
-            android:id="@+id/onboarding_to_signUp_graph"
-            app:destination="@id/signUpFragment" />
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/dialogFragment"
-        android:name="com.starthub.securityApp.GuardSessionFragment"
+        android:name="com.starthub.securityApp.mainActivity.GuardSessionFragment"
         android:label="fragment_dialog"
         tools:layout="@layout/fragment_guard_seesion" />
-    <!--    <fragment-->
-<!--        android:id="@+id/splash_screenFragment"-->
-<!--        android:name="com.starthub.securityApp.Splash_screenFragment"-->
-<!--        android:label="Splash_screenFragment" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_splash_screenFragment_to_getStarted"-->
-<!--            app:destination="@id/getStarted" />-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@+id/extendGaurdSessionTimeFragment"
+        android:name="com.starthub.securityApp.mainActivity.ExtendGaurdSessionTimeFragment"
+        android:label="ExtendGaurdSessionTimeFragment"
+        tools:layout="@layout/fragment_extend_gaurd_session_time" />
+
+    <fragment
+        android:id="@+id/emailVerificationFragment"
+        android:name="com.starthub.securityApp.mainActivity.EmailVerificationFragment"
+        android:label="fragment_email_verification"
+        tools:layout="@layout/fragment_email_verification" />
+    <fragment
+        android:id="@+id/endSessionFragment"
+        android:name="com.starthub.securityApp.mainActivity.EndSessionFragment"
+        android:label="fragment_end_session"
+        tools:layout="@layout/fragment_end_session" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_my_profile" />
+
+    <fragment
+        android:id="@+id/DeleteInformationFragment"
+        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
+        android:label="fragment_delete_information"
+        tools:layout="@layout/fragment_delete_information" />
+    <dialog
+        android:id="@+id/deleteInformationFragment"
+        android:name="com.starthub.securityApp.mainActivity.DeleteInformationFragment"
+        android:label="fragment_delete_information"
+        tools:layout="@layout/fragment_delete_information" >
+        <action
+            android:id="@+id/action_deleteInformationFragment_to_confirmDeleteFragment"
+            app:destination="@id/confirmDeleteFragment" />
+        <action
+            android:id="@+id/action_deleteInformationFragment_to_informationSavedFragment"
+            app:destination="@id/informationSavedFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/confirmDeleteFragment"
+        android:name="com.starthub.securityApp.mainActivity.ConfirmDeleteFragment"
+        android:label="fragment_confirm_delete"
+        tools:layout="@layout/fragment_confirm_delete" />
+    <fragment
+        android:id="@+id/informationSavedFragment"
+        android:name="com.starthub.securityApp.mainActivity.InformationSavedFragment"
+        android:label="fragment_information_saved"
+        tools:layout="@layout/fragment_information_saved" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.starthub.securityApp.mainActivity.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+<!--    <fragment-->
+
+<!--        android:id="@+id/notificationFragment"-->
+<!--        android:name="com.starthub.bottomnavexample.ui.notifications.NotificationsFragment"-->
+<!--        android:label="NotificationsFragment"-->
+<!--        tools:layout="@layout/fragment_notification"/>-->
+<!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.starthub.securityApp.HomeFragment"-->
+<!--        android:label="HomeFragment" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/guardFragment"-->
+<!--        android:name="com.starthub.securityApp.guard.GuardFragment"-->
+<!--        android:label="fragment_guide"-->
+<!--        tools:layout="@layout/fragment_guard" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/profileFragment2"-->
+<!--        android:name="com.starthub.securityApp.ProfileFragment"-->
+<!--        android:label="fragment_profile"-->
+<!--        tools:layout="@layout/fragment_guard" />-->
+
 
 </navigation>
