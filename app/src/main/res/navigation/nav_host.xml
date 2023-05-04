@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.starthub.securityApp.mainActivity.Login"
+        android:name="com.starthub.securityApp.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -52,7 +52,11 @@
         android:id="@+id/forgotPassword2"
         android:name="com.starthub.securityApp.mainActivity.ForgotPassword"
         android:label="fragment_forgot_password"
-        tools:layout="@layout/fragment_forgot_password" />
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/onBoardingFragment"
         android:name="com.starthub.securityApp.mainActivity.OnBoardingFragment"
@@ -67,12 +71,23 @@
         android:id="@+id/dialogFragment"
         android:name="com.starthub.securityApp.mainActivity.GuardSessionFragment"
         android:label="fragment_dialog"
-        tools:layout="@layout/fragment_guard_seesion" />
+        tools:layout="@layout/fragment_guard_seesion" >
+        <action
+            android:id="@+id/action_dialogFragment_to_extendGaurdSessionTimeFragment"
+            app:destination="@id/extendGaurdSessionTimeFragment" />
+        <action
+            android:id="@+id/action_dialogFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
     <fragment
         android:id="@+id/extendGaurdSessionTimeFragment"
         android:name="com.starthub.securityApp.mainActivity.ExtendGaurdSessionTimeFragment"
         android:label="ExtendGaurdSessionTimeFragment"
-        tools:layout="@layout/fragment_extend_gaurd_session_time" />
+        tools:layout="@layout/fragment_extend_gaurd_session_time" >
+        <action
+            android:id="@+id/action_extendGaurdSessionTimeFragment_to_deleteInformationFragment"
+            app:destination="@id/deleteInformationFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/emailVerificationFragment"
@@ -83,7 +98,11 @@
         android:id="@+id/endSessionFragment"
         android:name="com.starthub.securityApp.mainActivity.EndSessionFragment"
         android:label="fragment_end_session"
-        tools:layout="@layout/fragment_end_session" />
+        tools:layout="@layout/fragment_end_session" >
+        <action
+            android:id="@+id/action_endSessionFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"

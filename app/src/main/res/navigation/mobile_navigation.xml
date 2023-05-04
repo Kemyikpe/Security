@@ -21,7 +21,7 @@
         android:id="@+id/notificationsFragment"
         android:name="com.starthub.securityApp.ui.notifications.NotificationsFragment"
         android:label="NotificationsFragment"
-        tools:layout="@layout/fragment_notification"/>
+        tools:layout="@layout/fragment_notifications"/>
     <fragment
         android:id="@+id/myProfileFragment"
         android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"

@@ -28,9 +28,9 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var recentGuardList = mutableListOf(
             RecentGuard("peace_james","06,Apr,08:32 AM"),
-            RecentGuard("peace_james","06,Apr,08:32 AM"),
-            RecentGuard("peace_james","06,Apr,08:32 AM"),
-            RecentGuard("peace_james","06,Apr,08:32 AM"),
+//            RecentGuard("peace_james","06,Apr,08:32 AM"),
+//            RecentGuard("peace_james","06,Apr,08:32 AM"),
+//            RecentGuard("peace_james","06,Apr,08:32 AM"),
         )
 
         val recentPostedAdapter = RecentGuardAdapter(recentGuardList)
