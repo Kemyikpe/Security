@@ -58,6 +58,9 @@ class OnBoardingFragment : Fragment() {
                     nextBtn.setOnClickListener {
                         val current = (viewPagerLayout.currentItem) + 1
                         viewPagerLayout.currentItem = current
+                        if (current == MAX_STEP) {
+                            findNavController().navigate(R.id.action_onBoardingFragment_to_loginFragment)
+                        }
                     }
                 }
             })

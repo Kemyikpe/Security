@@ -23,7 +23,7 @@ class SignUp : Fragment() {
         // Inflate the layout for this fragment
         binding  = FragmentSignUpBinding.inflate(inflater,container,false)
         val view = inflater.inflate(R.layout.fragment_sign_up,container,false)
-        val button = view.findViewById<Button>(R.id.button2)
+        val button = view.findViewById<Button>(R.id.signUpBtn)
 
         button.setOnClickListener {
             findNavController().navigate(R.id.action_signUpFragment_to_emailVerificationFragment)

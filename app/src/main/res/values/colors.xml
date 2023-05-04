@@ -11,4 +11,5 @@
     <color name="grey_color">#FF6B6B6B</color>
     <color name="landing_bck">#712687</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="text_grey">#7D7979</color>
 </resources>
