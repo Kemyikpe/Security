@@ -33,7 +33,7 @@ class ForgotPassword : Fragment() {
 
         val image = view.findViewById<ImageView>(R.id.imageView2)
         image.setOnClickListener {
-            findNavController().navigate(R.id.action_forgotPassword2_to_loginFragment)
+            findNavController().navigate(R.id.action_forgotPassword_to_loginFragment)
         }
     }
 

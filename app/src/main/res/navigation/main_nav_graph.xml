@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_host"
+    android:id="@+id/main_nav_graph"
     app:startDestination="@id/splashscreenFragment">
 
     <fragment
@@ -43,18 +43,18 @@
             app:destination="@id/signUpFragment" />
         <action
             android:id="@+id/action_loginFragment_to_forgotPassword2"
-            app:destination="@id/forgotPassword2" />
+            app:destination="@id/forgotPassword" />
         <action
-            android:id="@+id/action_loginFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+            android:id="@+id/action_loginFragment_to_homeFragmentFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
-        android:id="@+id/forgotPassword2"
+        android:id="@+id/forgotPassword"
         android:name="com.starthub.securityApp.mainActivity.ForgotPassword"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" >
         <action
-            android:id="@+id/action_forgotPassword2_to_loginFragment"
+            android:id="@+id/action_forgotPassword_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
@@ -76,8 +76,8 @@
             android:id="@+id/action_dialogFragment_to_extendGaurdSessionTimeFragment"
             app:destination="@id/extendGaurdSessionTimeFragment" />
         <action
-            android:id="@+id/action_dialogFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+            android:id="@+id/action_dialogFragment_to_homeFragmentFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/extendGaurdSessionTimeFragment"
@@ -103,12 +103,6 @@
             android:id="@+id/action_endSessionFragment_to_dialogFragment"
             app:destination="@id/dialogFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_my_profile" />
-
     <fragment
         android:id="@+id/DeleteInformationFragment"
         android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
@@ -136,32 +130,26 @@
         android:name="com.starthub.securityApp.mainActivity.InformationSavedFragment"
         android:label="fragment_information_saved"
         tools:layout="@layout/fragment_information_saved" />
+
     <fragment
-        android:id="@+id/dashboardFragment"
-        android:name="com.starthub.securityApp.mainActivity.DashboardFragment"
-        android:label="fragment_dashboard"
+        android:id="@+id/homeFragment"
+        android:name="com.starthub.securityApp.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
-
-<!--    <fragment-->
-
-<!--        android:id="@+id/notificationFragment"-->
-<!--        android:name="com.starthub.bottomnavexample.ui.notifications.NotificationsFragment"-->
-<!--        android:label="NotificationsFragment"-->
-<!--        tools:layout="@layout/fragment_notification"/>-->
-<!--    <fragment-->
-<!--        android:id="@+id/homeFragment"-->
-<!--        android:name="com.starthub.securityApp.HomeFragment"-->
-<!--        android:label="HomeFragment" />-->
-<!--    <fragment-->
-<!--        android:id="@+id/guardFragment"-->
-<!--        android:name="com.starthub.securityApp.guard.GuardFragment"-->
-<!--        android:label="fragment_guide"-->
-<!--        tools:layout="@layout/fragment_guard" />-->
-<!--    <fragment-->
-<!--        android:id="@+id/profileFragment2"-->
-<!--        android:name="com.starthub.securityApp.ProfileFragment"-->
-<!--        android:label="fragment_profile"-->
-<!--        tools:layout="@layout/fragment_guard" />-->
-
+    <fragment
+        android:id="@+id/guardFragment"
+        android:name="com.starthub.securityApp.guard.GuardFragment"
+        android:label="GuardFragment"
+        tools:layout="@layout/fragment_guard"/>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.starthub.securityApp.ui.notifications.NotificationsFragment"
+        android:label="NotificationsFragment"
+        tools:layout="@layout/fragment_notifications"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
 
 </navigation>

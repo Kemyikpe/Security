@@ -1,41 +1,64 @@
 package com.starthub.securityApp.mainActivity
 
-import android.content.Intent
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
-import androidx.annotation.RequiresApi
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.starthub.securityApp.R
 import com.starthub.securityApp.databinding.ActivityMainBinding
-import com.starthub.securityApp.databinding.FragmentSignUpBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-
-        val navHostFragment = supportFragmentManager
-
-        val intent = Intent(this@MainActivity,MainActivity2:: class.java)
-        startActivity(intent)
+        val navView: BottomNavigationView = binding.bottomNavView
+        val navController = findNavController(R.id.nav_host_fragment)
 
 
-//        navHostFragment.setupWithNavController(navController)
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.homeFragment,
+                R.id.guardFragment,
+                R.id.notificationFragment,
+                R.id.profileFragment
+            )
+        )
 
+        //setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
 
+        navController.addOnDestinationChangedListener { controller, destination, _ ->
 
+            when (destination.id) {
+                R.id.homeFragment ,
+                R.id.guardFragment,
+                R.id.notificationFragment,
+                R.id.profileFragment -> toggleBottomNav(View.VISIBLE, this)
+                else -> toggleBottomNav(View.GONE, this)
+            }
+        }
 
     }
 
+    private fun navigateToFragment(fragmentId: Int) {
+        val navController = findNavController(R.id.nav_host_fragment)
+        navController.navigate(fragmentId)
+    }
+
+
+    private fun toggleBottomNav(visibility: Int = View.VISIBLE, activity: Activity) {
+        val bottomNavigationView = activity.findViewById<BottomNavigationView>(R.id.bottom_nav_view)
+        bottomNavigationView?.visibility = visibility
+    }
 
 }

@@ -18,23 +18,22 @@ open class GuardSessionFragment : BottomSheetDialogFragment() {
     lateinit var showDiaglogMessage: Message
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentGuardSeesionBinding.inflate(inflater,container,false)
+        binding = FragmentGuardSeesionBinding.inflate(inflater, container, false)
 
-        val view = inflater.inflate(R.layout.fragment_guard_seesion,container,false)
-         val button = view.findViewById<Button>(R.id.btn2)
-        button .setOnClickListener {
+        val view = inflater.inflate(R.layout.fragment_guard_seesion, container, false)
+        val button = view.findViewById<Button>(R.id.btn2)
+        button.setOnClickListener {
             //var dialog = CustomDialogFragment()
-           // dialog. show
-            findNavController().navigate(R.id.action_dialogFragment_to_dashboardFragment)
+            // dialog. show
+            findNavController().navigate(R.id.action_dialogFragment_to_homeFragmentFragment)
 
         }
-return view
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,7 +41,7 @@ return view
 
         val button = view.findViewById<Button>(R.id.btn2)
         button.setOnClickListener {
-          findNavController().navigate(R.id.action_dialogFragment_to_extendGaurdSessionTimeFragment)
+            findNavController().navigate(R.id.action_dialogFragment_to_extendGaurdSessionTimeFragment)
         }
 
     }

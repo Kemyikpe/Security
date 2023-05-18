@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import java.util.regex.Pattern
@@ -35,7 +36,7 @@ class LoginFragment : Fragment() {
 
 
         submit.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragmentFragment)
 
 //            val email = email.text.toString().trim()
 //            val password = password.text.toString().trim()
