@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashscreenFragment"
-        android:name="com.starthub.securityApp.mainActivity.SplashScreenFragment"
+        android:name="com.starthub.securityApp.ui.splash.SplashScreenFragment"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/getStarted"
-        android:name="com.starthub.securityApp.mainActivity.GetStarted"
+        android:name="com.starthub.securityApp.ui.getStarted.GetStarted"
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_get_started" >
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.starthub.securityApp.mainActivity.SignUp"
+        android:name="com.starthub.securityApp.ui.signup.SignUp"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.starthub.securityApp.LoginFragment"
+        android:name="com.starthub.securityApp.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/forgotPassword"
-        android:name="com.starthub.securityApp.mainActivity.ForgotPassword"
+        android:name="com.starthub.securityApp.ui.forgotPassword.ForgotPassword"
         android:label="fragment_forgot_password"
         tools:layout="@layout/fragment_forgot_password" >
         <action
@@ -59,7 +59,7 @@
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="com.starthub.securityApp.mainActivity.OnBoardingFragment"
+        android:name="com.starthub.securityApp.ui.onboarding.OnBoardingFragment"
         android:label="OnBoardingFragment"
         tools:layout="@layout/fragment_onboarding"
         >
@@ -69,7 +69,7 @@
     </fragment>
     <fragment
         android:id="@+id/dialogFragment"
-        android:name="com.starthub.securityApp.mainActivity.GuardSessionFragment"
+        android:name="com.starthub.securityApp.ui.guard.GuardSessionFragment"
         android:label="fragment_dialog"
         tools:layout="@layout/fragment_guard_seesion" >
         <action
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/extendGaurdSessionTimeFragment"
-        android:name="com.starthub.securityApp.mainActivity.ExtendGaurdSessionTimeFragment"
+        android:name="com.starthub.securityApp.ui.guard.ExtendGaurdSessionTimeFragment"
         android:label="ExtendGaurdSessionTimeFragment"
         tools:layout="@layout/fragment_extend_gaurd_session_time" >
         <action
@@ -91,12 +91,12 @@
 
     <fragment
         android:id="@+id/emailVerificationFragment"
-        android:name="com.starthub.securityApp.mainActivity.EmailVerificationFragment"
+        android:name="com.starthub.securityApp.ui.emailVerification.EmailVerificationFragment"
         android:label="fragment_email_verification"
         tools:layout="@layout/fragment_email_verification" />
     <fragment
         android:id="@+id/endSessionFragment"
-        android:name="com.starthub.securityApp.mainActivity.EndSessionFragment"
+        android:name="com.starthub.securityApp.ui.endSession.EndSessionFragment"
         android:label="fragment_end_session"
         tools:layout="@layout/fragment_end_session" >
         <action
@@ -105,12 +105,12 @@
     </fragment>
     <fragment
         android:id="@+id/DeleteInformationFragment"
-        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
+        android:name="com.starthub.securityApp.ui.profile.MyProfileFragment"
         android:label="fragment_delete_information"
         tools:layout="@layout/fragment_delete_information" />
     <dialog
         android:id="@+id/deleteInformationFragment"
-        android:name="com.starthub.securityApp.mainActivity.DeleteInformationFragment"
+        android:name="com.starthub.securityApp.ui.deleteInfomation.DeleteInformationFragment"
         android:label="fragment_delete_information"
         tools:layout="@layout/fragment_delete_information" >
         <action
@@ -122,12 +122,12 @@
     </dialog>
     <fragment
         android:id="@+id/confirmDeleteFragment"
-        android:name="com.starthub.securityApp.mainActivity.ConfirmDeleteFragment"
+        android:name="com.starthub.securityApp.ui.deleteInfomation.ConfirmDeleteFragment"
         android:label="fragment_confirm_delete"
         tools:layout="@layout/fragment_confirm_delete" />
     <fragment
         android:id="@+id/informationSavedFragment"
-        android:name="com.starthub.securityApp.mainActivity.InformationSavedFragment"
+        android:name="com.starthub.securityApp.ui.informationSaved.InformationSavedFragment"
         android:label="fragment_information_saved"
         tools:layout="@layout/fragment_information_saved" />
 
@@ -138,7 +138,7 @@
         tools:layout="@layout/fragment_dashboard" />
     <fragment
         android:id="@+id/guardFragment"
-        android:name="com.starthub.securityApp.guard.GuardFragment"
+        android:name="com.starthub.securityApp.ui.guard.GuardFragment"
         android:label="GuardFragment"
         tools:layout="@layout/fragment_guard"/>
     <fragment
@@ -148,7 +148,7 @@
         tools:layout="@layout/fragment_notifications"/>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.starthub.securityApp.mainActivity.MyProfileFragment"
+        android:name="com.starthub.securityApp.ui.profile.MyProfileFragment"
         android:label="fragment_my_profile"
         tools:layout="@layout/fragment_my_profile" />
 
